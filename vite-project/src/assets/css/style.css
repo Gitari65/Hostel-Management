@@ -1,11 +1,3 @@
-/******************************************************************
-  Template Name: Hotel Template
-  Description: Hotel HTML Template
-  Author: colorlib
-  Author URI: https://www.colorlib.com/
-  Version: 1.0
-  Created: colorlib
-******************************************************************/
 
 /*------------------------------------------------------------------
 [Table of contents]
@@ -122,6 +114,13 @@ ol {
 /*---------------------
   Helper CSS
 -----------------------*/
+:root{
+	/**colors**/
+	--var--color-primary: #523B35;
+	--var--color-secondary: #E8DFCF;
+	--var--color-tertiary: #CC9966;
+	--var--color-quaternary: #FF722D;
+}
 
 .section-title {
 	margin-bottom: 80px;
@@ -274,7 +273,7 @@ ol {
 -----------------------*/
 
 .header-section {
-	background: #353535;
+	background: var(--var--color-primary);
 	padding: 38px 0;
 	position: absolute;
 	left: 0;
@@ -369,6 +368,7 @@ ol {
 .inner-header .main-menu ul li .drop-menu li {
 	display: block;
 	margin-right: 0;
+	
 }
 
 .inner-header .main-menu ul li .drop-menu li:hover Link{
@@ -382,6 +382,8 @@ ol {
 	font-size: 20px;
 	font-weight: 400;
 	letter-spacing: 0.5px;
+	list-style: none;
+	text-decoration: none;
 }
 
 .inner-header .main-menu ul li a {
@@ -490,7 +492,11 @@ ol {
 	font-size: 20px;
 	color: #ae9548;
 }
-
+.nav-links:hover {
+	font-weight: 500;
+	color: #646cff;
+	text-decoration: inherit;
+}
 /*---------------------
   Room Availability
 -----------------------*/

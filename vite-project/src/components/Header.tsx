@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import '../assets/css/style.css'
+
 
 const Header = () => {
   return (
@@ -8,8 +10,8 @@ const Header = () => {
       <div className="container-fluid">
         <div className="inner-header">
           <div className="logo">
-            <Link to="/">
-              <img src="img/logo.png" alt="Logo" />
+            <Link  to="/">
+              <img src="../assets/img/logo/plaza-hostel-logo.png" alt="Logo" />
             </Link>
           </div>
           <div className="container">
@@ -18,19 +20,19 @@ const Header = () => {
                 <nav className="main-menu mobile-menu">
                   <ul>
                     <li>
-                      <Link to="/">Home</Link>
+                      <Link to="/" className="nav-links"  >Home</Link>
                     </li>
                     <li>
-                      <Link to="/about-us">About</Link>
+                      <Link to="/about-us" className="nav-links"  >About</Link>
                     </li>
                     <li>
-                      <Link to="/rooms">Rooms</Link>
+                      <Link to="/rooms" className="nav-links"  >Rooms</Link>
                     </li>
                     <li>
-                      <Link to="/facilities">Facilities</Link>
+                      <Link to="/facilities" className="nav-links" >Facilities</Link>
                       <ul className="drop-menu">
                         <li>
-                          <Link to="/junior-suite">Junior Suite</Link>
+                          <Link  to="/junior-suite">Junior Suite</Link>
                         </li>
                         <li>
                           <Link to="/double-room">Double Room</Link>
@@ -44,15 +46,15 @@ const Header = () => {
                       </ul>
                     </li>
                     <li>
-                      <Link to="/news">News</Link>
+                      <Link className="nav-links"  to="/news"  >News</Link>
                     </li>
                     <li>
-                      <Link to="/contact">Contact</Link>
+                      <Link className="nav-links"  to="/contact" >Contact</Link>
                     </li>
                   </ul>
                 </nav>
                 <div className="top-info">
-                  <img src="img/placeholder.png" alt="Location" />
+                  <img src="../img/placeholder.png" alt="Location" />
                   <span>Plaza Hostel, Dekut, NYERI</span>
                 </div>
               </div>
