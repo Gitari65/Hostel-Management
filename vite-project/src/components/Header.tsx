@@ -6,12 +6,13 @@ import '../assets/css/style.css'
 const Header = () => {
   return (
     <>
+    <title>Plaza Hostel</title>
      <header className="header-section">
       <div className="container-fluid">
         <div className="inner-header">
           <div className="logo">
             <Link  to="/">
-              <img src="../assets/img/logo/plaza-hostel-logo.png" alt="Logo" />
+              <img className='hostel-logo' src="img/logo/plaza-hostel-logo.png" alt="Logo"  />
             </Link>
           </div>
           <div className="container">
