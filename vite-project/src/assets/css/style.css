@@ -278,6 +278,8 @@ ol {
 	position: absolute;
 	left: 0;
 	width: 100%;
+	z-index: 999;
+	height: 100px;
 }
 
 .header-section.other-page {
@@ -426,6 +428,12 @@ ol {
 	display: none;
 }
 
+.hostel-logo{
+	width: 120px;
+	height: 120px;
+	translate: 0 -50px;
+}
+
 /*---------------------
   Hero Slider
 -----------------------*/
@@ -496,6 +504,10 @@ ol {
 	font-weight: 500;
 	color: #646cff;
 	text-decoration: inherit;
+}
+.single-slider-nav img{
+	width: 250px;
+	height: 200px;
 }
 /*---------------------
   Room Availability
