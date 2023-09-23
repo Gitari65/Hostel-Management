@@ -21,15 +21,15 @@ const Slider = () => {
                         <div className="col-lg-12">
                             <div className="slider-nav">
                                 <a href="#" className="single-slider-nav">
-                                    <img src="img/nav-1.jpg" alt=""></img>
+                                    <img src="img/pooltable.jpg" alt=""></img>
                                     <div className="nav-text active">
-                                        <p>Pool<i className="lnr lnr-arrow-right"></i></p>
+                                        <p>Pool Table<i className="lnr lnr-arrow-right"></i></p>
                                     </div>
                                 </a>
                                 <a href="#" className="single-slider-nav">
-                                    <img src="img/nav-2.jpg" alt=""></img>
+                                    <img src="img/screenTv.jpg" alt=""></img>
                                     <div className="nav-text">
-                                        <p>Sauna<i className="lnr lnr-arrow-right"></i></p>
+                                        <p>Entertainment Room<i className="lnr lnr-arrow-right"></i></p>
                                     </div>
                                 </a>
                                 <a href="#" className="single-slider-nav last">
