@@ -505,9 +505,9 @@ ol {
 	color: #646cff;
 	text-decoration: inherit;
 }
-.single-slider-nav img{
-	width: 250px;
-	height: 200px;
+.carousel-item img{
+	width: 100%;
+	
 }
 /*---------------------
   Room Availability
