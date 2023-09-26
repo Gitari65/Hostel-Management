@@ -1,7 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../assets/css/style.css'
-import '../assets/css/bootstrap.min.css'
 
 const Header = () => {
   return (
@@ -11,6 +9,7 @@ const Header = () => {
       <div className="container-fluid">
         <div className="inner-header">
           <div className="logo">
+        
             <Link  to="/">
               <img className='hostel-logo' src="img/logo/plaza-hostel-logo.png" alt="Logo"  />
             </Link>
@@ -18,7 +17,7 @@ const Header = () => {
           <div className="container">
             <div className="row">
               <div className="col-xl-12">
-                <nav className="main-menu mobile-menu">
+                <nav className="main-menu mobile-menu" >
                   <ul>
                     <li>
                       <Link to="/" className="nav-links"  >Home</Link>
@@ -64,6 +63,27 @@ const Header = () => {
           <div id="mobile-menu-wrap"></div>
         </div>
       </div>
+      <div className="row gx-0 bg-white d-none d-lg-flex">
+                        <div className="col-lg-7 px-5 text-start">
+                            <div className="h-100 d-inline-flex align-items-center py-2 me-4">
+                                <i className="fa fa-envelope text-primary me-2"></i>
+                                <p className="mb-0">info@example.com</p>
+                            </div>
+                            <div className="h-100 d-inline-flex align-items-center py-2">
+                                <i className="fa fa-phone-alt text-primary me-2"></i>
+                                <p className="mb-0">+012 345 6789</p>
+                            </div>
+                        </div>
+                        <div className="col-lg-5 px-5 text-end">
+                            <div className="d-inline-flex align-items-center py-2">
+                                <a className="me-3" href=""><i className="fab fa-facebook-f"></i></a>
+                                <a className="me-3" href=""><i className="fab fa-twitter"></i></a>
+                                <a className="me-3" href=""><i className="fab fa-linkedin-in"></i></a>
+                                <a className="me-3" href=""><i className="fab fa-instagram"></i></a>
+                                <a className="" href=""><i className="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
     </header>
     </>
    
