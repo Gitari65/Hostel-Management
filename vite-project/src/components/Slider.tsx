@@ -18,23 +18,23 @@ const Slider = () => {
   <div className="carousel-inner">
     <div className="carousel-item active" data-bs-interval="10000">
       <img src="/img/building-pic3.jpg" className="d-block w-100" alt="..."></img>
-      <div className="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
+      <div className="carousel-caption d-none d-md-block slider-info animated slideInDown">
+        <h5>The Plaza Hostels   </h5>
+        <p> Welcome</p>
       </div>
     </div>
     <div className="carousel-item" data-bs-interval="2000">
       <img src="/img/building-pic2.jpg" className="d-block w-100" alt="..."></img>
-      <div className="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>Some representative placeholder content for the second slide.</p>
+      <div className="carousel-caption d-none d-md-block slider-info">
+        <h5> Clean Environment</h5>
+        <p>Experience a quite clean environment suitable for studying.</p>
       </div>
     </div>
     <div className="carousel-item">
       <img src="/img/room-1.jpg" className="d-block w-100" alt="..."></img>
-      <div className="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Some representative placeholder content for the third slide.</p>
+      <div className="carousel-caption d-none d-md-block slider-info">
+        <h5>24/7 Security</h5>
+        <p>Plaza Hostels are well secured 24/7.</p>
       </div>
     </div>
   </div>
