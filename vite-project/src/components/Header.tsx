@@ -1,6 +1,33 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+//import instagram,facebook,twitter,linkedin,youtube icons
+import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+// import { faInstagram,faFacebook,faTwitter,faLinkedin,faYoutube } from '@fortawesome/free-brands-svg-icons'
+import { faInstagram, faFacebook, faTwitter, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-icons';
+//import call and email icons
+import { faPhoneAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
+
+
+// You can now use the imported icons in your code
+const elementInsta = <FontAwesomeIcon icon={faInstagram} />
+const elementFace = <FontAwesomeIcon icon={faFacebook} />
+const elementTwit = <FontAwesomeIcon icon={faTwitter} />
+const elementLink = <FontAwesomeIcon icon={faLinkedin} />
+const elementYou = <FontAwesomeIcon icon={faYoutube} />
+const elementCall = <FontAwesomeIcon icon={faPhoneAlt} />
+const elementMail = <FontAwesomeIcon icon={faEnvelope} />
+
+
+// const element = <FontAwesomeIcon icon={faCoffee} />
+// const elementInsta = <FontAwesomeIcon icon={faInstagram} />
+// const elementFace = <FontAwesomeIcon icon={faFacebook} />
+// const elementTwit = <FontAwesomeIcon icon={faTwitter} />
+// const elementLink = <FontAwesomeIcon icon={faLinkedin} />
+// const elementYou = <FontAwesomeIcon icon={faYoutube} />
+
+ 
 const Header = () => {
   return (
     <>
@@ -63,24 +90,24 @@ const Header = () => {
           <div id="mobile-menu-wrap"></div>
         </div>
       </div>
-      <div className="row gx-0 bg-white d-none d-lg-flex">
+      <div className="row gx-0 bg-white d-none d-lg-flex contact-nav-info">
                         <div className="col-lg-7 px-5 text-start">
                             <div className="h-100 d-inline-flex align-items-center py-2 me-4">
-                                <i className="fa fa-envelope text-primary me-2"></i>
-                                <p className="mb-0">info@example.com</p>
+                                {elementMail}
+                                <p className="mb-0">plazahostels@gmail.com</p>
                             </div>
                             <div className="h-100 d-inline-flex align-items-center py-2">
-                                <i className="fa fa-phone-alt text-primary me-2"></i>
+                                {elementCall}
                                 <p className="mb-0">+012 345 6789</p>
                             </div>
                         </div>
                         <div className="col-lg-5 px-5 text-end">
                             <div className="d-inline-flex align-items-center py-2">
-                                <a className="me-3" href=""><i className="fab fa-facebook-f"></i></a>
-                                <a className="me-3" href=""><i className="fab fa-twitter"></i></a>
-                                <a className="me-3" href=""><i className="fab fa-linkedin-in"></i></a>
-                                <a className="me-3" href=""><i className="fab fa-instagram"></i></a>
-                                <a className="" href=""><i className="fab fa-youtube"></i></a>
+                                <a className="me-3" href="">{elementInsta}</a>
+                                <a className="me-3" href="">{elementTwit}</a>
+                                <a className="me-3" href="">{elementLink}</a>
+                                <a className="me-3" href="">{elementFace} </a>
+                                <a className="" href="">{elementYou}</a>
                             </div>
                         </div>
                     </div>
