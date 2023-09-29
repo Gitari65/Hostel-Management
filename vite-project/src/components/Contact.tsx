@@ -1,120 +1,100 @@
+import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-const Contact = () => {
+import { faWhatsapp, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons'
+/**use fontawsome icons as constants */
+
+
+
+
+
+
+
+/***initialize wow */
+const whatsapp = <FontAwesomeIcon icon={faWhatsapp} />
+const twitter = <FontAwesomeIcon icon={faTwitter} />
+import { faMapMarkerAlt, faPhone, faPhoneAlt } from '@fortawesome/free-solid-svg-icons'
+/**use the icons */
+const elementLocation = <FontAwesomeIcon icon={faMapMarkerAlt} />
+const elementPhone = <FontAwesomeIcon icon={faPhone} />
+
+
+
+
+class Contact extends React.Component {
+ 
+    render() {
+     
     return (
       <div>
         
   
-   
+        <div className="container container-fluid text-center d-flex justify-content-center contact flex-column align align-items-center">
+
+  <div className=" contact-socials row align-items-start animate__animated animate__bounceIn">
+
+    <div className="col">
+    <div className="card" style={{ width: '18rem' }}>
+ <span> {elementPhone}</span>
+  <div className="card-body">
+    <h5 className="card-title">Call us</h5>
+
+    
+ <p className="card-text">+254 789 654</p>
+  </div>
+</div>
+    </div>
+    <div className="col">
+    <div className="card" style={{ width: '18rem' }}>
+ <span> {whatsapp}</span>
+  <div className="card-body">
+    <h5 className="card-title">Whatsapp</h5>
+
+    
+ <p className="card-text">+254 789 654</p>
+  </div>
+</div>
+    </div>
+    <div className="col">
+    <div className="card" style={{ width: '18rem' }}>
+ <span> {twitter}</span>
+  <div className="card-body">
+    <h5 className="card-title">Twitter</h5>
+
+    
+ <p className="card-text">+254 789 654</p>
+  </div>
+</div>
+    </div>
+  </div>
+
   
-    {/**<!-- Hero Section Begin -->*/ }  
-      <section className="hero-section set-bg" data-setbg="img/contact-bg.jpg">
-          <div className="hero-text">
-              <div className="container">
-                  <div className="row">
-                      <div className="col-lg-12">
-                          <h1>Contact</h1>
-                      </div>
-                  </div>
-                  <div className="page-nav">
-                      <a href="./news.html" className="left-nav"><i className="lnr lnr-arrow-left"></i> News</a>
-                  </div>
-              </div>
-          </div>
-      </section>
-      {/*<!-- Hero Section End -->*/} 
+<div className="card d-flex justify-content-center contact-form" style={{width:" 60%"}} >
+<div className="mb-3 row align-items-start d-flex justify-content-center " >
+    <h1>Contact Us</h1>
+<label htmlFor="exampleFormControlInput1" className="form-label">Name</label>
+  <input type="text" className="form-control w-50" id="exampleFormControlInput1" placeholder="your name"></input>
+    
+  <label htmlFor="exampleFormControlInput2" className="form-label">Email address</label>
+  <input type="email" className="form-control w-50 " id="exampleFormControlInput2" placeholder="name@example.com"></input>
+</div>
+<div className="mb-4 ">
+  <label htmlFor="exampleFormControlTextarea1" className="form-label">Talk to Us</label>
+<textarea className="form-control w-70" id="exampleFormControlTextarea1" placeholder='say something' rows={3}></textarea>
+</div>
+<div className="mb-4">
+  <button type="button" className="btn btn-primary">Submit</button>
+  </div>
   
-     {/* <!-- Contact Section Begin -->*/} 
-      <section className="contact-section spad">
-          <div className="container">
-              <div className="row">
-                  <div className="col-lg-6">
-                      <div className="contact-left">
-                          <div className="contact-information">
-                              <h2>Contact Information</h2>
-                              <ul>
-                                  <li><img src="img/placeholder-copy.png" alt=""> </img><span>1525 Boring Lane, Los Angeles,
-                                          CA</span></li>
-                                  <li><img src="img/phone-copy.png" alt=""> </img><span>+1 (603)535-4592</span></li>
-                                  <li><img src="img/envelop.png" alt=""></img> <span>hello@youremail.com</span></li>
-                                  <li><img src="img/clock-copy.png" alt=""></img> <span>Everyday: 06:00 -22:00</span></li>
-                              </ul>
-                          </div>
-                          <div className="social-links">
-                              <h2>Follow us on:</h2>
-                              <a href="#"><i className="fa fa-facebook"></i></a>
-                              <a href="#"><i className="fa fa-instagram"></i></a>
-                              <a href="#"><i className="fa fa-linkedin"></i></a>
-                              <a href="#"><i className="fa fa-pinterest"></i></a>
-                              <a href="#"><i className="fa fa-twitter"></i></a>
-                              <a href="#"><i className="fa fa-youtube-play"></i></a>
-                          </div>
-                      </div>
-                  </div>
-                  <div className="col-lg-6">
-                      <div className="contact-form">
-                          <h5>Write us ...</h5>
-                          <form action="#">
-                              <div className="row">
-                                  <div className="col-lg-12">
-                                      <p>From</p>
-                                      <div className="input-group">
-                                          <input type="text" placeholder="Full Name"></input>
-                                          <img src="img/edit.png" alt=""></img>
-                                      </div>
-                                  </div>
-                                  <div className="col-lg-6">
-                                      <div className="input-group">
-                                          <input type="email" placeholder="Email"></input>
-                                          <img src="img/envelop-copy.png" alt=""></img>
-                                      </div>
-                                  </div>
-                                  <div className="col-lg-6">
-                                      <div className="input-group phone-num">
-                                          <input type="text" placeholder="Phone"></input>
-                                          <img src="img/phone-copy.png" alt=""></img>
-                                      </div>
-                                  </div>
-                                  <div className="col-lg-12">
-                                      <div className="message">
-                                          <p>Message</p>
-                                          <div className="textarea">
-                                              <textarea placeholder="Hi ..."></textarea>
-                                              <img src="img/speech-copy.png" alt=""></img>
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <div className="col-lg-12">
-                                      <button type="submit">Send <i className="lnr lnr-arrow-right"></i></button>
-                                  </div>
-                              </div>
-                          </form>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </section>
-     {/*** <!-- Contact Section End --> */}
+</div>
   
-      {/*<!-- Map Section Begin -->*/}
-      <div className="map" id='map'>
-         
-      </div>
-      {/*<!-- Map Section End -->*/}
-  
-  
-  
-     {/** <!-- Js Plugins --> */}
-      <script src="js/jquery-3.3.1.min.js"></script>
-      <script src="js/bootstrap.min.js"></script>
-      <script src="js/jquery.magnific-popup.min.js"></script>
-      <script src="js/jquery-ui.min.js"></script>
-      <script src="js/jquery.nice-select.min.js"></script>
-      <script src="js/jquery.slicknav.js"></script>
-      <script src="js/owl.carousel.min.js"></script>
-      <script src="js/main.js"></script>
+</div>
+
+
   
       </div>
     )
   }
+}
   
   export default Contact
