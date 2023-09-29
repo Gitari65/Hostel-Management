@@ -1,6 +1,7 @@
 import React from 'react'
 import '../assets/css/style.css'
 
+
 const Slider = () => {
   return (
  
@@ -18,7 +19,7 @@ const Slider = () => {
   <div className="carousel-inner">
     <div className="carousel-item active" data-bs-interval="10000">
       <img src="/img/building-pic3.jpg" className="d-block w-100" alt="..."></img>
-      <div className="carousel-caption d-none d-md-block slider-info animated slideInDown">
+      <div className="carousel-caption d-none d-md-block slider-info animated slideInDown animate__animated animate__bounceIn">
         <h5>The Plaza Hostels   </h5>
         <p> Welcome</p>
       </div>
