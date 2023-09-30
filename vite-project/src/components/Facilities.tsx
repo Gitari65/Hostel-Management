@@ -2,8 +2,11 @@ import React from 'react'
 
 
 
-const Facilities = () => {
+class Facilities extends React.Component {
+      
+     render() {
   return (
+    
     <div>
         
    {/*<!-- Facilities Section Begin -->**/} 
@@ -49,6 +52,7 @@ const Facilities = () => {
    {/**<!-- Facilities Section End --> */} 
     </div>
   )
+}
 }
 
 export default Facilities
