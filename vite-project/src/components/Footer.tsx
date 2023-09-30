@@ -1,4 +1,3 @@
-import React from 'react'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 /**import location phone/phone setup icons from fontawesome */
