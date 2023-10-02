@@ -1,7 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import { faWhatsapp, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { faWhatsapp, faTwitter} from '@fortawesome/free-brands-svg-icons'
 /**use fontawsome icons as constants */
 
 
@@ -13,9 +13,9 @@ import { faWhatsapp, faTwitter, faInstagram } from '@fortawesome/free-brands-svg
 /***initialize wow */
 const whatsapp = <FontAwesomeIcon icon={faWhatsapp} />
 const twitter = <FontAwesomeIcon icon={faTwitter} />
-import { faMapMarkerAlt, faPhone, faPhoneAlt } from '@fortawesome/free-solid-svg-icons'
+import {faPhone } from '@fortawesome/free-solid-svg-icons'
 /**use the icons */
-const elementLocation = <FontAwesomeIcon icon={faMapMarkerAlt} />
+/**const elementLocation = <FontAwesomeIcon icon={faMapMarkerAlt} />**/
 const elementPhone = <FontAwesomeIcon icon={faPhone} />
 
 
