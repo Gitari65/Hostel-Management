@@ -1,8 +1,8 @@
-import React from 'react';
+
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 //import instagram,facebook,twitter,linkedin,youtube icons
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+
 // import { faInstagram,faFacebook,faTwitter,faLinkedin,faYoutube } from '@fortawesome/free-brands-svg-icons'
 import { faInstagram, faFacebook, faTwitter, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-icons';
 //import call and email icons
@@ -47,7 +47,7 @@ const Header = () => {
                 <nav className="main-menu mobile-menu" >
                   <ul>
                     <li>
-                      <Link to="/" className="nav-links"  >Home</Link>
+                      <Link to="/home" className="nav-links"  >Home</Link>
                     </li>
                     <li>
                       <Link to="/about-us" className="nav-links"  >About</Link>
@@ -76,7 +76,7 @@ const Header = () => {
                       <Link className="nav-links"  to="/news"  >News</Link>
                     </li>
                     <li>
-                      <Link className="nav-links"  to="/contact" >Contact</Link>
+                      <Link className="nav-links"  to="/contacts" >Contact</Link>
                     </li>
                   </ul>
                 </nav>
