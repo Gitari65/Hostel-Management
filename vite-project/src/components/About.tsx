@@ -1,4 +1,4 @@
-import React from 'react'
+
 import CountUp from 'react-countup'
 /**import room,client and staff like icons from font awesome */
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -15,6 +15,14 @@ const hotel = <FontAwesomeIcon icon={faHotel} />
 const usersCog = <FontAwesomeIcon icon={faUsersCog} />
 const users = <FontAwesomeIcon icon={faUsers} />
 const arrowRight = <FontAwesomeIcon icon={faArrowRight} />
+
+/**import whatsapp,twitter,instagram  icons from fontawesome*/
+import { faWhatsapp, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons'
+/**use fontawsome icons as constants */
+const whatsapp = <FontAwesomeIcon icon={faWhatsapp} />
+const twitter = <FontAwesomeIcon icon={faTwitter} />
+const instagram = <FontAwesomeIcon icon={faInstagram} />
+
 
 
 
@@ -83,122 +91,109 @@ const About = () => {
        {/**  <!-- About End -->*/} 
 
 
-        {/**<!-- Team Start --> */} 
-        <div className="container-xxl py-5">
-            <div className="container">
-                <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <h6 className="section-title text-center text-primary text-uppercase">Our Team</h6>
-                    <h1 className="mb-5">Explore Our <span className="text-primary text-uppercase">Staffs</span></h1>
-                </div>
-                <div className="row g-4">
-                    <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div className="rounded shadow overflow-hidden">
-                            <div className="position-relative">
-                              <img className="img-fluid" src="img/team-1.jpg" alt="" />
+
+      
+
+
+
+
+    
+        
+       {/** <!-- staff info-->*/} 
+
+       <div className="container-xxl staff-section">
+            <div className="container text-center">
+              <h1>Our Staff</h1>
+  <div className="row align-items-center">
+    <div className="col">
+    <div className="card" style={{width: "18rem"}}>
+  <img src="img/staff/staff-2.jpg" className="card-img-top img-fluid" alt="..."></img>
+  <div className="card-body">
+    <h3 >Staff Name</h3>
+    <h6>Resignation</h6>
+    <p className="card-text">
+      
+    <div className="position-relative staff-social-media " >
+                             
                               <div className="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
-                                <a className="btn btn-square btn-primary mx-1" href=""><i className="fab fa-facebook-f"></i></a>
-                                <a className="btn btn-square btn-primary mx-1" href=""><i className="fab fa-twitter"></i></a>
-                                <a className="btn btn-square btn-primary mx-1" href=""><i className="fab fa-instagram"></i></a>
+                                <a className="btn btn-square primary-buttons mx-1" id='staff-socials' href="">{whatsapp}</a>
+                                <a className="btn btn-square primary-buttons mx-1"  id='staff-socials' href="">{twitter}</a>
+                                <a className="btn btn-square primary-buttons mx-1" id='staff-socials' href="">{instagram}</a>
                               </div>
                             </div>
-                            <div className="text-center p-4 mt-3">
-                              <h5 className="fw-bold mb-0">Full Name</h5>
-                              <small>Designation</small>
-                            </div>
-                            <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                              <div className="rounded shadow overflow-hidden">
-                                <div className="position-relative">
-                                  <img className="img-fluid" src="img/staff/staff-5.jpg" alt="" />
-                                  <div className="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
-                                    <a className="btn btn-square btn-primary mx-1" href=""><i className="fab fa-facebook-f"></i></a>
-                                    <a className="btn btn-square btn-primary mx-1" href=""><i className="fab fa-twitter"></i></a>
-                                    <a className="btn btn-square btn-primary mx-1" href=""><i className="fab fa-instagram"></i></a>
-                                  </div>
-                                </div>
-                                <div className="text-center p-4 mt-3">
-                                  <h5 className="fw-bold mb-0">Full Name</h5>
-                                  <small>Designation</small>
-                                </div>
+    </p>
+    {/**<a href="#" className="btn btn-primary">Go somewhere</a>**/}
+  </div>
+</div>
+    </div>
+    <div className="col">
+    <div className="card" style={{width: "18rem"}}>
+  <img src="img/staff/staff-2.jpg" className="card-img-top img-fluid" alt="..."></img>
+  <div className="card-body">
+    <h3 >Staff Name</h3>
+    <h6>Resignation</h6>
+    <p className="card-text">
+      
+    <div className="position-relative staff-social-media " >
+                             
+                              <div className="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
+                                <a className="btn btn-square primary-buttons mx-1" id='staff-socials' href="">{whatsapp}</a>
+                                <a className="btn btn-square primary-buttons mx-1"  id='staff-socials' href="">{twitter}</a>
+                                <a className="btn btn-square primary-buttons mx-1" id='staff-socials' href="">{instagram}</a>
                               </div>
                             </div>
-                            <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                              <div className="rounded shadow overflow-hidden">
-                                <div className="position-relative">
-                                  <img className="img-fluid" src="img/team-3.jpg" alt="" />
-                                  <div className="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
-                                    <a className="btn btn-square btn-primary mx-1" href=""><i className="fab fa-facebook-f"></i></a>
-                                    <a className="btn btn-square btn-primary mx-1" href=""><i className="fab fa-twitter"></i></a>
-                                    <a className="btn btn-square btn-primary mx-1" href=""><i className="fab fa-instagram"></i></a>
-                                  </div>
-                                </div>
-                                <div className="text-center p-4 mt-3">
-                                  <h5 className="fw-bold mb-0">Full Name</h5>
-                                  <small>Designation</small>
-                                </div>
+    </p>
+    {/**<a href="#" className="btn btn-primary">Go somewhere</a>**/}
+  </div>
+</div>
+    </div>
+    <div className="col">
+    <div className="card" style={{width: "18rem"}}>
+  <img src="img/staff/staff-2.jpg" className="card-img-top img-fluid" alt="..."></img>
+  <div className="card-body">
+    <h3 >Staff Name</h3>
+    <h6>Resignation</h6>
+    <p className="card-text">
+      
+    <div className="position-relative staff-social-media " >
+                             
+                              <div className="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
+                                <a className="btn btn-square primary-buttons mx-1" id='staff-socials' href="">{whatsapp}</a>
+                                <a className="btn btn-square primary-buttons mx-1"  id='staff-socials' href="">{twitter}</a>
+                                <a className="btn btn-square primary-buttons mx-1" id='staff-socials' href="">{instagram}</a>
                               </div>
                             </div>
-                            <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                              <div className="rounded shadow overflow-hidden">
-                                <div className="position-relative">
-                                  <img className="img-fluid" src="img/team-4.jpg" alt="" />
-                                  <div className="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
-                                    <a className="btn btn-square btn-primary mx-1" href=""><i className="fab fa-facebook-f"></i></a>
-                                    <a className="btn btn-square btn-primary mx-1" href=""><i className="fab fa-twitter"></i></a>
-                                    <a className="btn btn-square btn-primary mx-1" href=""><i className="fab fa-instagram"></i></a>
-                                  </div>
-                                </div>
-                                <div className="text-center p-4 mt-3">
-                                  <h5 className="fw-bold mb-0">Full Name</h5>
-                                  <small>Designation</small>
-                                </div>
-                              </div>
-                            </div>
-                            <div className="container newsletter mt-5 wow fadeIn" data-wow-delay="0.1s">
-                              <div className="row justify-content-center">
-                                <div className="col-lg-10 border rounded p-1">
-                                  <div className="border rounded text-center p-1">
-                                    <div className="bg-white rounded text-center p-5">
-                                      <h4 className="mb-4">Subscribe Our <span className="text-primary text-uppercase">Newsletter</span></h4>
-                                      <div className="position-relative mx-auto" style={{ maxWidth: "400px" }}>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                                <input className="form-control w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email"></input>
-                                <button type="button" className="btn btn-primary py-2 px-3 position-absolute top-0 end-0 mt-2 me-2">Submit</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    </p>
+    {/**<a href="#" className="btn btn-primary">Go somewhere</a>**/}
+  </div>
+</div>
+    </div>
+  </div>
+</div>
+              
+              
             </div>
-            {/*<!-- Newsletter Start -->**/}
-        <div className="container newsletter mt-5 wow fadeIn" data-wow-delay="0.1s">
+                    {/*<!-- Newsletter Start -->**/}
+        <div className="container newsletter mt-5 wow fadeIn news-letter" data-wow-delay="0.1s">
             <div className="row justify-content-center">
                 <div className="col-lg-10 border rounded p-1">
                     <div className="border rounded text-center p-1">
                         <div className="bg-white rounded text-center p-5">
-                            <h4 className="mb-4">Subscribe Our <span className="text-primary text-uppercase">Newsletter</span></h4>
+                            <h4 className="mb-4">Subscribe Our <span className=" text-uppercase" >Newsletter</span></h4>
                           
                             <input
                               className="form-control w-100 py-3 ps-4 pe-5"
-                              type="text"
+                              type="text" id='text-email'
                               placeholder="Enter your email"
                               style={{ maxWidth: "400px" }} // Add the style property here
                             />
-                                <input className="form-control w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email"></input>
-                                <button type="button" className="btn btn-primary py-2 px-3 position-absolute top-0 end-0 mt-2 me-2">Submit</button>
+                             <button type="button" className="btn py-2 px-3  " id="btn-submit-email">Submit</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        
-       {/** <!-- Newsletter Start -->*/} 
-
-
     </>
   )
 }
